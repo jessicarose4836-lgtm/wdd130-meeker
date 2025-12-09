@@ -1,4 +1,104 @@
 /* Only one stylesheet for all your pages */
 body {
     background: #000000;
+    color: #ffffff;
+    margin: 0;
+    font-family: /* connect downloaded rubik font here */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #425A64;
+    color: #ffffff;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar img {
+    width: 35px;
+    height: 35px;
+}
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.hero {
+    background: ""; /* put background image here */
+    margin: 20px;
+    padding: 60px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2.section-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    position: relative;
+}
+h2.section-title::after {
+    content: ""; /*add content*/
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #F3BF6B;
+    margin: 8px auto 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    width: 220px;
+    height: 260px;
+    background: "";/* images somehow */
+    border-radius: 10px;
+}
+
+.contact-box {
+    background: #4E8C99;
+    margin: 20px auto;
+    width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.contact-box input {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #425A64;
+    color: #ffffff;
+}
+.contact-box button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    background: #F3BF6B;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+footer {
+    background: #4E8C99;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    margin: 40px auto;
 }
