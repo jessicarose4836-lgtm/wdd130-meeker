@@ -3,7 +3,7 @@ body {
     background: #000000;
     color: #ffffff;
     margin: 0;
-    font-family: /* connect downloaded rubik font here */
+    font-family: "Rubik", Arial, sans-serif;
 }
 
 .navbar {
@@ -13,6 +13,7 @@ body {
     padding: 10px 20px;
     background: #425A64;
     color: #ffffff;
+    font-family: "Rubik", Arial, sans-serif;
 }
 .navbar .logo {
     display: flex;
@@ -22,6 +23,8 @@ body {
 .navbar img {
     width: 35px;
     height: 35px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
 }
 .navbar nav a {
     margin-left: 20px;
@@ -31,7 +34,9 @@ body {
 }
 
 .hero {
-    background: ""; /* put background image here */
+    background-image: url("images/image22k.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 20px;
     padding: 60px 20px;
     border-radius: 10px;
@@ -45,7 +50,7 @@ h2.section-title {
     position: relative;
 }
 h2.section-title::after {
-    content: ""; /*add content*/
+    content: "";
     display: block;
     width: 120px;
     height: 3px;
@@ -62,11 +67,10 @@ h2.section-title::after {
 .card {
     width: 220px;
     height: 260px;
-    background: "";/* images somehow */
     border-radius: 10px;
 }
 
-.contact-box {
+ .contact-box {
     background: #4E8C99;
     margin: 20px auto;
     width: 80%;
@@ -74,31 +78,66 @@ h2.section-title::after {
     border-radius: 10px;
     text-align: center;
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.input-row {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 22%;
+}
+.form-group label {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
 .contact-box input {
-    width: 40%;
+    width: 100%;
     padding: 10px;
-    margin: 10px;
     border-radius: 6px;
     border: none;
     background: #425A64;
     color: #ffffff;
 }
 .contact-box button {
-    margin-top: 15px;
     padding: 10px 30px;
     background: #F3BF6B;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
+    width: 50%;
 }
 
 footer {
     background: #4E8C99;
     padding: 15px;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     border-radius: 10px;
     width: 90%;
     margin: 40px auto;
+    font-family: "Rubik", Arial, sans-serif;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
 }

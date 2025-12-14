@@ -9,7 +9,7 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <img src="" alt="logo image">
+            <img src="images/logok.png" alt="logo image">
             <span>The Modern Lens</span>
         </div>
         <nav>
@@ -21,7 +21,6 @@
     
     <main>
         <section class="hero">
-            <img src="images/image1k.png" alt="The Modern Lens, a new digital modern art gallery">
             <h1>The Modern Lens</h1>
             <p>A new digital modern art gallery</p>
         </section>
@@ -35,19 +34,24 @@
 
         <h2 class="section-title">Contact Us!</h2>
         <div class="contact-box">
-            <form>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
+            <form class="contact-form">
+                <div class="input-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <br>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                         <input type="text" id="name" name="name" required>
+                    </div>
+                </div>
                 <button type="submit">Reach Out!</button>
-            </form>
+            </form> <!-- what the actual crap is happening here? -->
         </div>
     </main>
     <footer>
-        <!-- Add copyright here -->
+        <p>&copy; 2025 Jessica Snedecor </p>
     </footer>
 </body>
 </html>
